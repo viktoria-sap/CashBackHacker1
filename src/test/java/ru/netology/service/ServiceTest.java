@@ -14,7 +14,7 @@ public class ServiceTest {
         assertEquals(actual, expected);
     }
     @Test
-    public void shouldService200() {
+    public void shouldService0() {
         Service service = new Service();
         int amount = 1000;
         int actual = service.remain(amount);
