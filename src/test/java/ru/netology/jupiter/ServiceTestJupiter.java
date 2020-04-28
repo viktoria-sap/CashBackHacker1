@@ -1,10 +1,11 @@
-package ru.netology.service;
+package ru.netology.jupiter;
 
-import org.testng.annotations.Test;
+import org.junit.jupiter.api.Test;
+import ru.netology.service.Service;
 
-import static org.testng.AssertJUnit.assertEquals;
+import static org.junit.jupiter.api.Assertions.*;
 
-public class ServiceTest {
+public class ServiceTestJupiter {
     @Test
     public void shouldService100() {
         Service service = new Service();
@@ -14,7 +15,7 @@ public class ServiceTest {
         assertEquals(actual, expected);
     }
     @Test
-    public void shouldService200() {
+    public void shouldService0() {
         Service service = new Service();
         int amount = 1000;
         int actual = service.remain(amount);
